@@ -1,5 +1,5 @@
 {
-  "name": "reporadar",
+  "name": "reporeader",
   "version": "1.0.0",
   "private": true,
   "description": "Zero-dependency public GitHub repository dashboard",
