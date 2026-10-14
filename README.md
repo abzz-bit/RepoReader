@@ -1,10 +1,10 @@
-# RepoRadar
+# RepoReader
 
 A responsive, zero-dependency dashboard for exploring public GitHub repositories. Built with vanilla HTML, CSS, and JavaScript. No login, token, database, or paid API is required.
 
 ## Preview
 
-![RepoRadar dashboard](screenshot.png)
+![RepoReader dashboard](screenshot.png)
 
 ## Features
 - Search a GitHub username and fetch public owned repositories across all pages.
@@ -60,9 +60,9 @@ Create an empty repository in your own account, then run in this folder (replace
 ```sh
 git init
 git add .
-git commit -m "Build RepoRadar dashboard"
+git commit -m "Build RepoReader dashboard"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/reporadar.git
+git remote add origin https://github.com/abzz-bit/RepoReader.git
 git push -u origin main
 ```
 
@@ -77,7 +77,10 @@ Before publishing, add a screenshot of your running app and update this README w
 MIT — see LICENSE.
 
 ## Verification for this build
-- Six automated tests passed; app.js and core.js syntax checks passed.
+- Seven automated tests passed; app.js and core.js syntax checks passed.
 - Browser smoke checks passed: offline demo, Python language filter, live octocat repository fetch, and subsequent cache reuse.
 - Multi-page fetches, real rate-limit exhaustion, mobile layout, and timeout/stale fallback were not exercised end-to-end.
 
+
+### RepoReader rename verification
+Seven tests passed, including the renamed browser export and cache namespace. JavaScript syntax checks passed. The renamed app opened in the browser, the offline demo was exercised, and the preview screenshot was refreshed. Live API behavior was verified before the rename but not rerun after it. The new cache namespace starts fresh; older cache entries are no longer read.
